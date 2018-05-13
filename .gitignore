@@ -15,6 +15,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*
 !/log/.keep
+logfile
 /tmp
 coverage
 public/system
@@ -58,3 +59,4 @@ yarn-debug.log
 # Ignore Docker option files
 docker-compose.override.yml
 
+dump.rdb
