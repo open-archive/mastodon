@@ -656,7 +656,7 @@ zh-HK:
     title: 作業階段
   settings:
     authorized_apps: 授權應用程式
-    back: 回到 Mastodon
+    back: 返回
     delete: 刪除帳戶
     development: 開發
     edit_profile: 修改個人資料

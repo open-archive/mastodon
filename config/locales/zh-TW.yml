@@ -250,7 +250,7 @@ zh-TW:
     revoke_success: Session 取消成功。
   settings:
     authorized_apps: 已授權應用程式
-    back: 回到 Mastodon
+    back: 返回
     development: 開發
     edit_profile: 修改個人資料
     export: 匯出

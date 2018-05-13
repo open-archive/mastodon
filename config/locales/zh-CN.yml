@@ -2,7 +2,7 @@
 zh-CN:
   about:
     about_hashtag_html: 这里展示的是带有话题标签 <strong>#%{hashtag}</strong> 的公开嘟文。如果你想与他们互动，你需要在任意一个 Mastodon 实例或与其兼容的网站上拥有一个帐户。
-    about_mastodon_html: Mastodon（长毛象）是一个建立在开放式网络协议和自由、开源软件之上的社交网络，有着类似于电子邮件的分布式设计。
+    about_mastodon_html: Moooon.Network 是一个建立在开源软件Mastodon上的社交网络。本社区专门面向加密货币爱好者，区块链项目组织者，加密货币投资者。Mastodon（长毛象）是一个建立在开放式网络协议和自由、开源软件之上的社交网络，有着类似于电子邮件的分布式设计。
     about_this: 关于本实例
     closed_registrations: 这个实例目前没有开放注册。不过，你可以前往其他实例注册一个帐户，同样可以加入到这个网络中哦！
     contact: 联系方式
@@ -15,13 +15,13 @@ zh-CN:
       <h3>这里可以写一些规定</h3>
       <p>本站尚未设置详细介绍。</p>
     features:
-      humane_approach_body: Mastodon 从其他网络的失败经验中汲取了教训，致力于在与错误的社交媒体使用方式的斗争中做出符合伦理化设计的选择。
-      humane_approach_title: 更加以人为本
-      not_a_product_body: Mastodon 绝非一个商业网络。这里既没有广告，也没有数据挖掘，更没有围墙花园。中心机构在这里不复存在。
-      not_a_product_title: 作为用户，你并非一件商品
+      humane_approach_body: 我们了解用户给网路带来价值。因此我们设计了一个积分系统。记录用户的各种贡献，并且我们计划在达到100万用户时，用对应的以太坊ERC20代币兑现积分。
+      humane_approach_title: 积分（代币）奖励系统
+      not_a_product_body: 项目的计划是，低成本地设立这个服务，用积分分配项目的token回报用户，而促进增长，目标是一年达到1百万用户（股东）。
+      not_a_product_title: 低成本运营
       real_conversation_body: Mastodon 有着高达 500 字的字数限制，以及对内容的细化控制和媒体警告提示的支持，只为让你能够畅所欲言。
-      real_conversation_title: 为真正的交流而生
-      within_reach_body: 通过一个面向开发者友好的 API 生态系统，Mastodon 让你可以随时随地通过众多 iOS、Android 以及其他平台的应用与朋友们保持联系。
+      real_conversation_title: 为区块链和加密货币交流而生
+      within_reach_body: 目前的加密货币和区块链社区多数基于BBS, 电报和微信。 BBS不适合多方交流，电报和微信群信息流动速度太快，缺乏记录。我们认为微博客是目前最好的方式。因此我们设立这个instance. 服务器设立在爱惜欧和加密货币合法的司法管辖地区，欢迎大家交流币和项目。
       within_reach_title: 始终触手可及
     generic_description: "%{domain} 是这个庞大网络中的一台服务器"
     hosted_on: 一个在 %{domain} 上运行的 Mastodon 实例
@@ -404,7 +404,7 @@ zh-CN:
     '500':
       content: 抱歉，我们的后台出错了。
       title: 这个页面有问题
-    noscript_html: 使用 Mastodon 网页版应用需要启用 JavaScript。你也可以选择适用于你的平台的 <a href="https://github.com/tootsuite/documentation/blob/master/Using-Mastodon/Apps.md">Mastodon 应用</a>。
+    noscript_html: 使用 Moooon 网页版应用需要启用 JavaScript。
   exports:
     blocks: 屏蔽的用户
     csv: CSV
@@ -583,7 +583,7 @@ zh-CN:
     title: 会话
   settings:
     authorized_apps: 已授权的应用
-    back: 回到 Mastodon
+    back: 返回
     delete: 删除帐户
     development: 开发
     edit_profile: 更改个人资料
@@ -654,12 +654,12 @@ zh-CN:
       full_handle_hint: 你需要把这个告诉你的朋友们，这样他们就能从另一个实例向你发送信息或者关注你。
       review_preferences_action: 更改首选项
       review_preferences_step: 记得调整你的偏好设置，比如你想接收什么类型的邮件，或者你想把你的嘟文可见范围默认设置为什么级别。如果你没有晕动病的话，考虑一下启用“自动播放 GIF 动画”这个选项吧。
-      subject: 欢迎来到 Mastodon
+      subject: 欢迎来到 Moooon
       tip_bridge_html: 如果你刚从 Twitter 来到这里，你可以在<a href="%{bridge_url}">桥梁站（bridge app）</a>上寻找你的朋友。当然，前提是他们也登录了桥梁站！
       tip_federated_timeline: 跨站公共时间轴可以让你一窥更广阔的 Mastodon 网络。不过，由于它只显示你的邻居们所订阅的内容，所以并不是全部。
       tip_following: 默认情况下，你会自动关注你所在实例的管理员。想结交更多有趣的人的话，记得多逛逛本站时间轴和跨站公共时间轴哦。
       tip_local_timeline: 本站时间轴可以让你一窥 %{instance} 上的用户。他们就是离你最近的邻居！
-      tip_mobile_webapp: 如果你的移动设备浏览器允许你将 Mastodon 添加到主屏幕，你就能够接收推送消息。它就像本地应用一样好使！
+      tip_mobile_webapp: 如果你的移动设备浏览器允许你将 Moooon 添加到主屏幕，你就能够接收推送消息。它就像本地应用一样好使！
       tips: 小贴士
       title: "%{name}，欢迎你的加入！"
   users:
