@@ -9,7 +9,7 @@ tr:
         locked: Takipçilerinizi manuel olarak kabul etmenizi ve gönderilerinizi varsayılan olarak sadece takipçilerinizin göreceği şekilde paylaşmanızı sağlar.
         note: "%{count} karakter kaldı"
       imports:
-        data: Diğer Mastodon sunucusundan dışarı aktardığınız CSV dosyası
+        data: Diğer Moooon sunucusundan dışarı aktardığınız CSV dosyası
       sessions:
         otp: Telefonunuzdaki two-factor kodunuzu giriniz veya kurtarma kodlarınızdan birini giriniz.
     labels:

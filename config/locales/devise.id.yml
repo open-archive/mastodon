@@ -17,13 +17,13 @@ id:
       unconfirmed: Anda harus mengkonfirmasi alamat email terlebih dahulu.
     mailer:
       confirmation_instructions:
-        subject: 'Mastodon: Petunjuk mengkonfirmasi untuk %{instance}'
+        subject: 'Moooon: Petunjuk mengkonfirmasi untuk %{instance}'
       password_change:
-        subject: 'Mastodon: Kata sandi telah diubah'
+        subject: 'Moooon: Kata sandi telah diubah'
       reset_password_instructions:
-        subject: 'Mastodon: Petunjuk mereset kata sandi'
+        subject: 'Moooon: Petunjuk mereset kata sandi'
       unlock_instructions:
-        subject: 'Mastodon: Petunjuk membuka'
+        subject: 'Moooon: Petunjuk membuka'
     omniauth_callbacks:
       failure: Tidak dapat mengautentikasi anda dari %{kind} karena "%{reason}".
       success: Autentikasi dari akun %{kind} berhasil dilakukan.

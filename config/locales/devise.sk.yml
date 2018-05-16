@@ -20,31 +20,31 @@ sk:
         action: Potvŕď emailovú adresu
         explanation: S touto emailovou adresou si si vytvoril/a účet na %{host}. Si iba jeden klik od jeho aktivácie. Pokiaľ si to ale nebol/a ty, prosím ignoruj tento email.
         extra_html: Prosím pozri sa aj na <a href="%{terms_path}"> pravidlá tohto servera,</a> a <a href="%{policy_path}"> naše užívaťeľské podiemky</a>.
-        subject: 'Mastodon: Potvrdzovacie inštrukcie pre %{instance}'
+        subject: 'Moooon: Potvrdzovacie inštrukcie pre %{instance}'
         title: Potvrď emailovú adresu
       email_changed:
         explanation: 'Emailová adresa tvojho účtu bude zmenená na:'
         extra: Pokiaľ si nezmenil/a svoj email, je pravdepodobné že niekto iný získal prístup k tvojmu účtu. Naliehavo preto prosím zmeň svoje heslo, alebo kontaktuj administrátora tohto serveru pokiaľ si vymknutý/á zo svojho účtu.
-        subject: 'Mastodon: Emailová adresa bola zmenená'
+        subject: 'Moooon: Emailová adresa bola zmenená'
         title: Nová emailová adresa
       password_change:
         explanation: Heslo k vašemu účtu bolo zmenené.
         extra: Pokiaľ si nezmenil/a svoje heslo, je pravdepodobné že niekto iný získal prístup k tvojmu účtu. Naliehavo preto prosím zmeň svoje heslo, alebo kontaktuj administrátora tohto serveru pokiaľ si vymknutý/á zo svojho účtu.
-        subject: 'Mastodon: Heslo bolo zmenené'
+        subject: 'Moooon: Heslo bolo zmenené'
         title: Heslo bolo zmenené
       reconfirmation_instructions:
         explanation: Potvrď novú emailovú adresu na ktorú chceš zmeniť svoj email.
-        extra: Pokiaľ si túto akciu nevyžiadal/a, prosím ignoruj tento email. Emailová adresa pre tvoj Mastodon účet totiž nebude zmenená pokiaľ nepostúpiš na adresu uvedenú vyššie.
-        subject: 'Mastodon: Potvrďenie emailu pre %{instance}'
+        extra: Pokiaľ si túto akciu nevyžiadal/a, prosím ignoruj tento email. Emailová adresa pre tvoj Moooon účet totiž nebude zmenená pokiaľ nepostúpiš na adresu uvedenú vyššie.
+        subject: 'Moooon: Potvrďenie emailu pre %{instance}'
         title: Overiť emailovú adresu
       reset_password_instructions:
         action: Zmeniť heslo
         explanation: Vyžiadal/a ste si nové heslo pre svoj účet.
         extra: Pokiaľ si túto akciu nevyžiadal/a, prosím ignoruj tento email. Tvoje heslo nebude zmenené pokiaľ nepostúpiš na adresu uvedenú vyššie a vytvoríš si nové.
-        subject: 'Mastodon: Inštrukcie pre obnovu hesla'
+        subject: 'Moooon: Inštrukcie pre obnovu hesla'
         title: Nastav nové heslo
       unlock_instructions:
-        subject: 'Mastodon: Inštrukcie pre odomknutie účtu'
+        subject: 'Moooon: Inštrukcie pre odomknutie účtu'
     omniauth_callbacks:
       failure: Nebolo možné ťa overiť z dôvodu,%{kind} že "%{reason}".
       success: Úspešné overenie z účtu %{kind}.

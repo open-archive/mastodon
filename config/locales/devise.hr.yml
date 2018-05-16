@@ -16,16 +16,16 @@ hr:
       unconfirmed: Moraš potvrditi svoju email adresu prije no što nastaviš.
     mailer:
       confirmation_instructions:
-        subject: 'Mastodon: Upute za potvrđivanje'
+        subject: 'Moooon: Upute za potvrđivanje'
       email_changed:
-        subject: 'Mastodon: Email adresa je promijenjena'
+        subject: 'Moooon: Email adresa je promijenjena'
         title: Nova email adresa
       password_change:
-        subject: 'Mastodon: Lozinka je promijenjena'
+        subject: 'Moooon: Lozinka je promijenjena'
       reset_password_instructions:
-        subject: 'Mastodon: Upute za resetiranje lozinke'
+        subject: 'Moooon: Upute za resetiranje lozinke'
       unlock_instructions:
-        subject: 'Mastodon: Upute za otključavanje'
+        subject: 'Moooon: Upute za otključavanje'
     omniauth_callbacks:
       failure: Ne možemo te autentificirati sa %{kind} zbog "%{reason}".
       success: Uspješno autentificiran sa %{kind} računa.
