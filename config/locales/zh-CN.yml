@@ -687,11 +687,9 @@ zh-CN:
     title: "%{instance} 使用条款和隐私权政策"
   themes:
     default: Light
-    # contrast: High contrast
     mastodon: Mastodon
     contrast: 高对比度
-    # default: Mastodon
-    mastodon-light: Mastodon（亮色主题）
+    # mastodon-light: Mastodon（亮色主题）
   time:
     formats:
       default: "%Y年%-m月%d日 %H:%M"

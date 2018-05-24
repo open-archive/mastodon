@@ -778,8 +778,7 @@ en:
     default: Light
     contrast: High contrast
     mastodon: Mastodon
-    # default: Mastodon
-    mastodon-light: Mastodon (light)
+    # mastodon-light: Mastodon (light)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
