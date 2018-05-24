@@ -11,9 +11,9 @@
     - else
       .account__display-name
         .account__avatar-wrapper
-          .account__avatar{ style: "background-image: url(#{full_asset_url('avatars/original/missing.png', skip_pipeline: true)})" }
+          .account__avatar{ style: "background-image: url(#{full_asset_url('avatars/original/open-archive-logo.png', skip_pipeline: true)})" }
         %span.display-name
           %strong= t 'Open Archive'
-          %span.display-name__account= t ' '
+          %span.display-name__account= link_to "https://openarchive.network", "https://openarchive.network", :target => "_blank"
 
     = link_to t('about.learn_more'), about_more_path, class: 'button button-alternative'

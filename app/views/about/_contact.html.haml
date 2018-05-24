@@ -16,7 +16,9 @@
             %span.username @#{contact.contact_account.acct}
     - else
       .owner
-        .avatar= image_tag full_asset_url('avatars/original/missing.png', skip_pipeline: true)
+        .avatar= image_tag full_asset_url('avatars/original/open-archive-logo.png', skip_pipeline: true)
         .name
-          %span.display_name= t 'about.contact_missing'
-          %span.username= t 'about.contact_unavailable'
+          %span.display_name= t 'Open Archive'
+          %span.username= link_to "https://openarchive.network", "https://openarchive.network", :target => "_blank"
+          -# %span.display_name= t 'about.contact_missing'
+          -# %span.username= t 'about.contact_unavailable'
