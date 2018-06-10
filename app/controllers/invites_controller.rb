@@ -12,6 +12,7 @@ class InvitesController < ApplicationController
 
     @invites = invites
     @invite  = Invite.new(expires_in: 1.day.to_i)
+    @bonuses = Bonu.where(:user_id => current_user.id).where("ontributor is not null").group_by(&:level)
   end
 
   def create

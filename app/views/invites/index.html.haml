@@ -17,3 +17,44 @@
       %th
   %tbody
     = render @invites
+
+%hr/
+%br
+%table.table
+  %tr
+    %td
+      邀请等级
+    %td
+      邀请人数
+    %td
+      获得奖励
+  - total_count, total_score = 0, 0
+  - @bonuses.each do |level, bonuse|
+    - user_count = bonuse.count
+    - score = bonuse.pluck(:score).sum
+    - total_count += user_count
+    - total_score += score
+    %tr
+      %td
+        L
+        = level
+      %td
+        = user_count
+      %td
+        = score
+  - (6 - @bonuses.count).times do |index|
+    %tr
+      %td
+        L
+        = index + @bonuses.count + 1
+      %td 0
+      %td 0
+  %tr
+    %td
+      总计:
+    %td
+      = total_count
+    %td
+      = total_score
+%hr/
+%br

@@ -39,6 +39,11 @@ Rails.application.routes.draw do
 
   get '/users/:username', to: redirect('/@%{username}'), constraints: lambda { |req| req.format.nil? || req.format.html? }
 
+
+
+  #########分层的路由
+  resources :trees
+
   resources :accounts, path: 'users', only: [:show], param: :username do
     resources :stream_entries, path: 'updates', only: [:show] do
       member do
@@ -172,6 +177,8 @@ Rails.application.routes.draw do
         end
       end
     end
+
+
 
     resources :users, only: [] do
       resource :two_factor_authentication, only: [:destroy]

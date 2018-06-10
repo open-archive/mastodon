@@ -413,6 +413,10 @@ class Account < ApplicationRecord
     @emojis ||= CustomEmoji.from_text(emojifiable_text, domain)
   end
 
+  def bonus
+    Bonu.where(:user_id => self.user.id).sum(&:score)
+  end
+
   before_create :generate_keys
   before_validation :normalize_domain
   before_validation :prepare_contents, if: :local?
