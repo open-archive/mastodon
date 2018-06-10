@@ -6,7 +6,7 @@ module Admin
       authorize :invite, :index?
       @invites = filtered_invites.includes(user: :account).page(params[:page])
       @invite  = Invite.new
-      @bonuses = Bonu.where(:user_id => current_user.id).group_by(&:level)
+      @bonuses = Bonu.where(:user_id => current_user.id).where("ontributor is not null").group_by(&:level)
     end
 
     def create
