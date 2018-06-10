@@ -4,9 +4,9 @@ module Admin
   class InvitesController < BaseController
     def index
       authorize :invite, :index?
-
       @invites = filtered_invites.includes(user: :account).page(params[:page])
       @invite  = Invite.new
+      @bonuses = Bonu.where(:user_id => current_user.id).group_by(&:level)
     end
 
     def create
