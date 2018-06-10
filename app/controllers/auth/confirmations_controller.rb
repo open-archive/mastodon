@@ -22,18 +22,20 @@ class Auth::ConfirmationsController < Devise::ConfirmationsController
   private
 
   def sent_bonus_to_ancestry
-    if resource.nil? or resource.errors.present? or resource.invite_id.blank?
-      Bonu.create({ user_id: resource.id, score: 100, level: 1, ontributor: nil })
-    else
-      invite = Invite.find(resource.invite_id)
-      resource.parent = invite.user
-      resource.save
-      ancestry_ids = resource.ancestry.split("/").reverse
-      hash = {1=> 200, 2 => 100, 3 => 50, 4 => 30,5 => 20, 6 => 10}
-      ancestry_ids[0..5].each_with_index do |ancestry_id, index|
-        Bonu.create({ user_id: ancestry_id, score: hash[index + 1], level: index + 1, ontributor: resource.id })
+    if Bonu.find_by(:user_id => resource.id, :ontributor => nil).nil?
+      if resource.nil? or resource.errors.present? or resource.invite_id.blank?
+        Bonu.create({ user_id: resource.id, score: 100, level: 1, ontributor: nil })
+      else
+        invite = Invite.find(resource.invite_id)
+        resource.parent = invite.user
+        resource.save
+        ancestry_ids = resource.ancestry.split("/").reverse
+        hash = {1=> 200, 2 => 100, 3 => 50, 4 => 30,5 => 20, 6 => 10}
+        ancestry_ids[0..5].each_with_index do |ancestry_id, index|
+          Bonu.create({ user_id: ancestry_id, score: hash[index + 1], level: index + 1, ontributor: resource.id })
+        end
+        Bonu.create({ user_id: resource.id, score: 200, level: 1, ontributor: nil })
       end
-      Bonu.create({ user_id: resource.id, score: 200, level: 1, ontributor: nil })
     end
   end
 
