@@ -104,6 +104,13 @@ export default class Compose extends React.PureComponent {
           <div className='drawer__inner' onFocus={this.onFocus}>
             <NavigationContainer onClose={this.onBlur} />
             <ComposeFormContainer />
+            <div style={{ margin: 10 }}>
+              <h3>当前奖励：</h3>
+              <ul>
+                <li>1. 嘟文每得到一个点赞将获得10个MNC (￥1)</li>
+                <li>2. 推荐好友注册，最多可得6级奖励：<a href='/invites'>推荐给好友</a></li>
+              </ul>
+            </div>
             {multiColumn && (
               <div className='drawer__inner__mastodon'>
                 <img alt='' draggable='false' src={elephantUIPlane} />

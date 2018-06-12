@@ -8,6 +8,7 @@ import spring from 'react-motion/lib/spring';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 import { autoPlayGif, me } from '../../../initial_state';
 import classNames from 'classnames';
+import { FormattedNumber } from 'react-intl';
 
 const messages = defineMessages({
   unfollow: { id: 'account.unfollow', defaultMessage: 'Unfollow' },
@@ -142,6 +143,7 @@ export default class Header extends ImmutablePureComponent {
           <span className='account__header__username'>@{account.get('acct')} {lockedIcon}</span>
 
           {badge}
+          <span><FormattedNumber value={account.get('bonus')} />MNC (￥<FormattedNumber value={account.get('bonus')/10} />)</span>
 
           <div className='account__header__content' dangerouslySetInnerHTML={content} />
 

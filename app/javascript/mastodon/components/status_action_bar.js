@@ -185,12 +185,14 @@ export default class StatusActionBar extends ImmutablePureComponent {
     const shareButton = ('share' in navigator) && status.get('visibility') === 'public' && (
       <IconButton className='status__action-bar-button' title={intl.formatMessage(messages.share)} icon='share-alt' onClick={this.handleShareClick} />
     );
+    const bonus = <span style={{ fontWeight: 'bold' }}>{`￥${status.get('favourites_count') * 10 / 10}`}</span>;
 
     return (
       <div className='status__action-bar'>
         <IconButton className='status__action-bar-button' disabled={anonymousAccess} title={replyTitle} icon={replyIcon} onClick={this.handleReplyClick} />
         <IconButton className='status__action-bar-button' disabled={anonymousAccess || !publicStatus} active={status.get('reblogged')} pressed={status.get('reblogged')} title={!publicStatus ? intl.formatMessage(messages.cannot_reblog) : intl.formatMessage(messages.reblog)} icon={reblogIcon} onClick={this.handleReblogClick} />
         <IconButton className='status__action-bar-button star-icon' disabled={anonymousAccess} animate active={status.get('favourited')} pressed={status.get('favourited')} title={intl.formatMessage(messages.favourite)} icon='star' onClick={this.handleFavouriteClick} />
+        {bonus}
         {shareButton}
 
         <div className='status__action-bar-dropdown'>

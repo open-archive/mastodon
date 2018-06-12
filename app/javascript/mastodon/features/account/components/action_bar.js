@@ -139,10 +139,10 @@ export default class ActionBar extends React.PureComponent {
               <strong><FormattedNumber value={account.get('followers_count')} /></strong>
             </Link>
 
-            <div className='account__action-bar__tab'>
-              <span>MNC</span>
-              <strong><FormattedNumber value={account.get('bonus')} /></strong>
-            </div>
+            {/* <div className='account__action-bar__tab'>
+              <span><FormattedNumber value={account.get('bonus')} />MNC</span>
+              <span>(￥<FormattedNumber value={account.get('bonus')/10} />)</span>
+            </div> */}
 
           </div>
         </div>

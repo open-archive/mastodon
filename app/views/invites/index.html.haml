@@ -42,6 +42,7 @@
         = user_count
       %td
         = score
+        MNC
   - (6 - @bonuses.count).times do |index|
     %tr
       %td
@@ -56,5 +57,8 @@
       = total_count
     %td
       = total_score
+      MNC (￥
+      = total_score/10
+      )
 %hr/
 %br

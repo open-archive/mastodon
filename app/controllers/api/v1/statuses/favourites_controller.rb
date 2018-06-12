@@ -11,6 +11,7 @@ class Api::V1::Statuses::FavouritesController < Api::BaseController
   def create
     @status = favourited_status
     render json: @status, serializer: REST::StatusSerializer
+    Bonu.create({ user_id: current_user.id, score: 10, level: 1, ontributor: nil })
   end
 
   def destroy
@@ -20,6 +21,7 @@ class Api::V1::Statuses::FavouritesController < Api::BaseController
     UnfavouriteWorker.perform_async(current_user.account_id, @status.id)
 
     render json: @status, serializer: REST::StatusSerializer, relationships: StatusRelationshipsPresenter.new([@status], current_user&.account_id, favourites_map: @favourites_map)
+    Bonu.create({ user_id: current_user.id, score: -10, level: 1, ontributor: nil })
   end
 
   private
