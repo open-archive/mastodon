@@ -9,6 +9,7 @@ module Admin
     def index
       authorize :account, :index?
       @accounts = filtered_accounts.page(params[:page])
+      @instance_presenter = InstancePresenter.new
     end
 
     def show

@@ -55,6 +55,23 @@
       %button= t('admin.accounts.search')
       = link_to t('admin.accounts.reset'), admin_accounts_path, class: 'button negative'
 
+.information-board
+  .container-alt
+    .information-board__sections
+      .information-board__section
+        %span= t 'about.user_count_before'
+        %strong= number_with_delimiter @instance_presenter.user_count
+        %span= t 'about.user_count_after'
+      .information-board__section
+        %span= t 'about.status_count_before'
+        %strong= number_with_delimiter @instance_presenter.status_count
+        %span= t 'about.status_count_after'
+      .information-board__section
+        %span= t 'about.domain_count_before'
+        %strong= number_with_delimiter @instance_presenter.domain_count
+        %span= t 'about.domain_count_after'
+
+
 .table-wrapper
   %table.table
     %thead
