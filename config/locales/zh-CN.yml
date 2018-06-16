@@ -2,9 +2,9 @@
 zh-CN:
   about:
     about_hashtag_html: 这里展示的是带有话题标签 <strong>#%{hashtag}</strong> 的公开嘟文。如果你想与他们互动，你需要在任意一个 Mastodon 实例或与其兼容的网站上拥有一个帐户。
-    about_mastodon_html: Moooon Network是专门服务加密货币投资者、区块链爱好者和ICO项目方的开源微博平台。Moooon的使命是为下一代的区块链和加密货币项目和爱好者自由沟通提供一个自由沟通的社区平台。
+    about_mastodon_html: Moooon是专门服务加密货币投资者、区块链爱好者和ICO项目方的开源微博平台。Moooon的使命是为下一代的区块链和加密货币项目和爱好者自由沟通提供一个自由沟通的社区平台。
     about_this: 关于本实例
-    administered_by: 本实例的管理员：
+    administered_by: 联系方式：
     closed_registrations: 这个实例目前没有开放注册。不过，你可以前往其他实例注册一个帐户，同样可以加入到这个网络中哦！
     contact: 联系方式
     contact_missing: 未设定
@@ -20,8 +20,8 @@ zh-CN:
       humane_approach_title: 积分（代币）奖励系统
       not_a_product_body: 项目的计划是，低成本地设立这个服务，用积分分配项目的token回报用户，而促进增长，目标是一年达到1百万用户（股东）。
       not_a_product_title: 低成本运营
-      real_conversation_body: 发布加密货币、区块链和ICO相关的推文；和moooon network上的其他人聊加密货币和区块链项目; 和ICO投资者、支持者沟通；关注项目和业界动态。
-      real_conversation_title: 用moooon可以做什么？
+      real_conversation_body: 发布加密货币、区块链和ICO相关的推文；和Moooon上的其他人聊加密货币和区块链项目; 和ICO投资者、支持者沟通；关注项目和业界动态。
+      real_conversation_title: 用Moooon可以做什么？
       within_reach_body: 目前的加密货币和区块链社区多数基于BBS, 电报和微信。 BBS不适合多方交流，电报和微信群信息流动速度太快，缺乏记录。我们认为微博客是目前最好的方式。因此我们设立这个instance. 服务器设立在爱惜欧和加密货币合法的司法管辖地区，欢迎大家交流币和项目。
       within_reach_title: 为什么Moooon比电报群更加适合加密社区交流？
     generic_description: "%{domain} 是这个庞大网络中的一台服务器"
@@ -33,7 +33,7 @@ zh-CN:
     status_count_before: 他们共嘟出了
     user_count_after: 位用户
     user_count_before: 这里共注册有
-    what_is_mastodon: Mastodon 是什么？
+    what_is_mastodon: Moooon 是什么？
   accounts:
     follow: 关注
     followers: 关注者
